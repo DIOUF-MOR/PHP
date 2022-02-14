@@ -1,5 +1,6 @@
 <?php
-    // session_start();
+    session_start();
+    include 'fonctions.php';
 ?>
     
 <!DOCTYPE html>
@@ -25,12 +26,14 @@
         </form>
   
     <?php
-                    
-        if (isset($_GET['error'])) {
 
-            echo '<p style="color:blue">Revoire votre saisie svp </p>';
+    
+
+        if (isset($_SESSION['error'])) {
+
+            echo "<h6 style='color:blue'>".$_SESSION['error']."</h6>";
         }
-
+        session_unset();
     ?>
 </body>
 </html>

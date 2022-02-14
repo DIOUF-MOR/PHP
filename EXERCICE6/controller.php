@@ -54,7 +54,7 @@
         }else {
             if (empty($a) || empty($b) || empty($c)) {
 
-                $_SESSION['error']='veuiller remplir tous les champs';
+                $_SESSION['error']='Remplissage des champs obligatoire';
 
             } else {
 

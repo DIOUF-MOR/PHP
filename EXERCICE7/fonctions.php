@@ -56,7 +56,7 @@
         $_SESSION["aP"]=$a;
 
     }
-    echo 'La date précedente est ' .$_SESSION["jP"]." / ". $_SESSION["mP"]." / ". $_SESSION["aP"] .'<br>'; 
+    echo '<h6>La date précedente est </h6>' .$_SESSION["jP"]." / ". $_SESSION["mP"]." / ". $_SESSION["aP"] .'<br>'; 
 }
 
 
@@ -108,7 +108,7 @@
         $_SESSION["mS"]=$m;
         $_SESSION["aS"]=$a;
      }
-     echo 'La date suivente est '.$_SESSION["jS"]." / ". $_SESSION["mS"]." / ". $_SESSION["aS"];
+     echo '<h6>La date suivente est </h6>'.$_SESSION["jS"]." / ". $_SESSION["mS"]." / ". $_SESSION["aS"];
  }
 
 

@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <form class="fm" action="controller.php" method="POST">
+    <input type="radio" name="langue">Français   
+    <input type="radio" name="language">English <br><br>
+    <input type="submit" name="traduit" value="Traduire">
+    </form>
 </body>
 </html>

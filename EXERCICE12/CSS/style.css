@@ -1,0 +1,14 @@
+body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+
+}
+.fm{
+    border: #ffb262 solid 2px;
+    display: grid;
+    background-color:#ffb262 ;
+    justify-items: center;
+    align-items: center;
+}
