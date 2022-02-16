@@ -1,0 +1,16 @@
+body{
+    background-color: rgba(78, 83, 83, 0.603);
+    justify-content: center;
+    display: grid;
+
+}
+.css{
+    display: grid;
+    width: 40vw;
+    height: 50vh;
+    background-color: antiquewhite;
+    justify-items: center;
+    font-size: 3rem;
+
+}
+

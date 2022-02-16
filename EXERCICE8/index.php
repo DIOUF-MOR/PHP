@@ -1,5 +1,6 @@
 <?php
-    // session_start();
+    session_start();
+    include 'fonctions.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,18 +10,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXO8</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../cssGlobal/styleGlobal.css">
 </head>
 <body>
+    <div class="css">
     <form id="out" action="controller.php" method="POST">
-    <label for="nombre"><h5>Entrer un nombre positif</h5></label>
-    <input type="text" name="nombre">
+    <label for="nombre"><h6>Entrer un nombre positif</h6></label>
+    <input type="text" name="nombre"><br>
     <input type="submit" value="Entrer" name="go">
     </form>
-    <ul>
-       
-       
-        
-    </ul>
+    </div>
+    
+    <div>
+    <br>
+            <div class="lesBoutons">
+                <button > <a href="../EXERCICE7/index.php"><<<<<</a></button>
+                <button> <a href="../EXERCICE9/index.php">>>>>></a></button>
+            </div>
+    
+    </div>
    
+    <div class="nmbre">
+    <?php
+
+        if (isset($_SESSION['n'])) {
+
+            echo listNmbre($_SESSION['n']);
+        }
+
+        if (isset($_SESSION['error'])) {
+            
+            echo "<h2 style='color:red'>".$_SESSION['error']."</h2>";
+        }
+        session_unset();
+    ?>
+    </div>
+
 </body>
 </html>

@@ -1,10 +1,32 @@
-table{
-    border: px solid blue;
-    
+body{
+    background-color: antiquewhite;
+    justify-items: center;
+    align-content: center;
+    display: grid;
+    /* grid-template-rows: auto auto auto; */
+
 }
-tr{
-    border: 1px solid rgb(2, 0, 0);
+.css{
+    display: grid;
+    background-color: rgba(78, 83, 83, 0.603);
+    width: 30vw;
+    height: 40vh;
+    align-items: center;
+    justify-items: center;
+    font-size: 3rem;
 }
-td{
-    border: 1px solid rgb(0, 255, 34);
+input{
+    display: grid;
+    width: 90%;
+    height: 4vh;
+    border-radius: 20px;
+}
+.nmbre{
+    display: grid;
+    background-color: #fbd08b;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 3rem;
 }

@@ -1,19 +1,23 @@
 <?php
 session_start();
-include 'fonctions.php';
+
 if(isset($_POST['go'])){
 
     $_SESSION['n']=$_POST['nombre'];
-
+    $error=[];
     if (!empty($_SESSION['n']) && $_SESSION['n']>0 && is_numeric($_SESSION['n'])) {
         
-       echo listNmbre($_SESSION['n']);
+        $_SESSION['n'];
 
-       
+       header ('location:index.php');
     }else {
-        echo 'veuiller saisir un nombre positif';
-        
+
+        $_SESSION['error']='veuiller saisir un nombre positif';
+
+        header ('location:index.php');
     }
+
+
 }
 
 

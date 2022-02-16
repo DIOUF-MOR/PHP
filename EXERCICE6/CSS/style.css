@@ -1,24 +1,25 @@
-body{
+.conteneur{
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns:3fr 5fr 3fr;
+    grid-template-columns:4fr 4fr 4fr;
     background-color: antiquewhite;
+
    overflow: hidden; 
 }
 .fmlre{
     display: grid;
     background-color: rgba(78, 83, 83, 0.603);
-    width: 100%;
+    width: 30vw;
     border-radius: 5px;
-    font-size: 10px;
-    height: 100%;  
+    font-size: 20px;
+    height: 50vh;  
     justify-items: center;
     align-items: center;
-    margin-top: 5rem;
 }
 input{
     display: grid;
+    height: 4vh;
     width: 90%;
     border-radius: 10px;
    
@@ -27,8 +28,9 @@ h6{
     display: grid;
     background-color:#f8d18e ;
     border-radius: 5px;
-    height: 20vh;
-    width: 80%;
+    height: 10vh;
+    width: 20vw;
     justify-items: center;
     align-items: center;
+    font-size: 2rem;
 }

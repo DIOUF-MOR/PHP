@@ -5,9 +5,9 @@
         
 
     if ($a>0 && $j==1 && ($m==4 || $m==2 || $m==6 || $m==8 || $m==9 || $m==11)) {
-        $_SESSION["jP"]=31;
         $_SESSION["mP"]=$m-1; 
         $_SESSION["aP"]=$a;
+        $_SESSION["jP"]=31;
 
     }
     if ($a>0 && $j>1 && $j<=31 && ($m==3 || $m==5 || $m==7 || $m==8 || $m==10 || $m==12 || $m==1)) {
@@ -60,7 +60,7 @@
 }
 
 
- function dateSuivante ($j,$m,$a,&$jS,&$mS,&$aS){
+ function dateSuivante ($j,$m,$a){
     
 
      if ($a>0 && $j==30 && ($m==4 || $m==6 || $m==9 || $m==11)) {

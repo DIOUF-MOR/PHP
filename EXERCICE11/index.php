@@ -9,15 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXO11</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../cssGlobal/styleGlobal.css">
 </head>
 <body>
+    <div class="css">
     <b>donner une valeure superieure à 10000<b>
     <form method="POST" action="controller.php">
-    <input type="text" name="champ">
+    <input type="text" name="champ"><br>
     <input type="submit" value="valider" name="vue">
     </form>
-
-
+    </div>
+    <br>
+            <div class="lesBoutons">
+                <button > <a href="../EXERCICE9/index.php"><<<<<</a></button>
+                <button> <a href="../EXERCICE11/index.php">>>>>></a></button>
+            </div>
+    
+    <div class="nmbre">
     <?php
         include 'fonctions.php';
        
@@ -56,7 +64,7 @@
             echo 'Premier Inferieur <br>';
 
             
-            $tabSup=(cleSuperieur($m));
+           $tabSup=(cleSuperieur($m));
     
 
             if ($m>60) {
@@ -78,6 +86,6 @@
 
         session_unset();
     ?>
-
+    </div>
 </body>
 </html>
