@@ -1,6 +1,6 @@
 <?php
 function afficheurTab (array $tab,int $taille){
-    $table= '<table>';
+    $table= "<table border>";
     for ($i=1; $i<= count($tab) ; $i++) { 
         if ($i%$taille==1) {
             $table=$table.'<tr>';
@@ -12,13 +12,3 @@ function afficheurTab (array $tab,int $taille){
     }
     echo $table;
 }
-
-function tabLangue(array $tab){
-    $tab=[];
-    $tabFr=[];
-    $tabEng=[];
-    $tabFr=array ('JANVIER','FEVRIER','MARS','AVRIL','MAIS','JUIN','JUILLET','SEPTEMBRE','OCTOBRE','NOVEMBRE','DECEMBRE');
-    $tabEng=array ('january','february','march','april','may','june','july','august','september','october','november','december');
-    $tab=('français'=>$tabFr,'English'=>$tabEng);
-}
-?>

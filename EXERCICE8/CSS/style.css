@@ -30,3 +30,9 @@ input{
     height: auto;
     font-size: 2rem;
 }
+.lesBoutons{
+    display: flex;
+}
+button{
+    margin: auto 1vw;
+}

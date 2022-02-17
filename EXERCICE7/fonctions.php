@@ -49,15 +49,18 @@
     $_SESSION["mP"]=2;
     $_SESSION["aP"]=$a;
 
-    }elseif ((($a%4==0 && $a%100<>0) || $a%400==0) && $a>0 && $m==3 && $j==1) {
+    }
+    if ((($a%4==0 && $a%100<>0) || $a%400==0) && $a>0 && $m==3 && $j==1) {
             
         $_SESSION["jP"]=29;
         $_SESSION["mP"]=2;
         $_SESSION["aP"]=$a;
-
     }
+
+    
     echo '<h6>La date précedente est </h6>' .$_SESSION["jP"]." / ". $_SESSION["mP"]." / ". $_SESSION["aP"] .'<br>'; 
 }
+
 
 
  function dateSuivante ($j,$m,$a){

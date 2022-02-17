@@ -9,7 +9,7 @@ if (isset($_POST['oui'])) {
 
     $error=[];
 
-    if (!empty($nbr) && is_numeric($nbr)) {
+    if (!empty($nbr) && $nbr > 0 && is_numeric($nbr)) {
         
        $_SESSION['n']=$nbr;
 

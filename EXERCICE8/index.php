@@ -33,9 +33,13 @@
     <div class="nmbre">
     <?php
 
-        if (isset($_SESSION['n'])) {
+        if (isset($_SESSION['n']) && !isset($_SESSION['error'])) {
+
+            echo "<b> Les nombres compris entre 1 et ".$_SESSION['n']." sont :</b>";
+
 
             echo listNmbre($_SESSION['n']);
+
         }
 
         if (isset($_SESSION['error'])) {

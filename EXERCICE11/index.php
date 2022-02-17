@@ -21,8 +21,8 @@
     </div>
     <br>
             <div class="lesBoutons">
-                <button > <a href="../EXERCICE9/index.php"><<<<<</a></button>
-                <button> <a href="../EXERCICE11/index.php">>>>>></a></button>
+                <button > <a href="../EXERCICE10/index.php"><<<<<</a></button>
+                <button> <a href="../EXERCICE12/index.php">>>>>></a></button>
             </div>
     
     <div class="nmbre">

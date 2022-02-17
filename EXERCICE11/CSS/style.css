@@ -3,16 +3,15 @@ body{
     justify-items: center;
     align-content: center;
     display: grid;
-    /* grid-template-rows: auto auto auto; */
 
 }
 .css{
     display: grid;
     background-color: rgba(78, 83, 83, 0.603);
-    width: 30vw;
-    height: 40vh;
+    width: 40vw;
+    height: 50vh;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
     font-size: 3rem;
 }
 input{
@@ -29,4 +28,10 @@ input{
     width: auto;
     height: auto;
     font-size: 3rem;
+}
+.lesBoutons{
+    display: flex;
+}
+button{
+    margin: auto 1vw;
 }
