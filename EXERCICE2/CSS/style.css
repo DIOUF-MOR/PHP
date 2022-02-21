@@ -1,16 +1,44 @@
 body{
-    background-color: rgba(78, 83, 83, 0.603);
+    background-color: rgba(78, 83, 83, 0.979);
     justify-content: center;
     display: grid;
 
 }
 .css{
     display: grid;
-    width: 40vw;
+    width: 60vw;
     height: 50vh;
     background-color: antiquewhite;
     justify-items: center;
     font-size: 2rem;
     padding: 1%;
+    border: 3rem solid blue;
+    grid-template-columns: 4fr 2fr 4fr;
+
 }
+.resultat{
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 3rem;
+}
+.sujet{
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 3rem;
+    
+}
+.impliq{
+    display: grid;
+    background-color: black;
+    color: white;
+    align-items: center;
+    margin: 3rem;
+}
+
 

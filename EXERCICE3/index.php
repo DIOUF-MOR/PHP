@@ -14,15 +14,24 @@
  include 'fonctions.php';
 $nmbre1=rand(1,10);
 $nmbre2=rand(1,10);
-echo 'Soit A = ',$nmbre1,' et B = ',$nmbre2,' les deux  nombres générés <br> Alors : <br>';
-echo 'La somme A+B = ', somme ($nmbre1,$nmbre2),'<br>';
-echo exponentiel ($nmbre1,$nmbre2),'<br>';
-echo 'La difference A-B = ',  difference ($nmbre1,$nmbre2),'<br>';
-echo 'Le produit A*B = ', produit($nmbre1,$nmbre2),'<br>';
-echo 'Le modulo A mod B = ', modulo ($nmbre1,$nmbre2),'<br>';
-echo 'La division de A par B = ', division ($nmbre1,$nmbre2),'<br>';
-echo carré($nmbre1,$nmbre2);
- ?>
+?>
+<div class="sujet">
+    <?php echo 'Soit A = ',$nmbre1,' et B = ',$nmbre2,' les deux  nombres générés <br> Alors : <br>';?> 
+</div>
+
+<div class="impliq"><b>======></b></div>
+
+<div class="resultat">
+    <?php
+    echo 'La somme A+B = ', somme ($nmbre1,$nmbre2),'<br>';
+    echo exponentiel ($nmbre1,$nmbre2),'<br>';
+    echo 'La difference A-B = ',  difference ($nmbre1,$nmbre2),'<br>';
+    echo 'Le produit A*B = ', produit($nmbre1,$nmbre2),'<br>';
+    echo 'Le modulo A mod B = ', modulo ($nmbre1,$nmbre2),'<br>';
+    echo 'La division de A par B = ', division ($nmbre1,$nmbre2),'<br>';
+    echo carré($nmbre1,$nmbre2);
+    ?>
+ </div>
  </div>
  <br>
         <div class="lesBoutons">

@@ -6,38 +6,46 @@
 
     if (isset($_POST['top'])) {
 
-    $j=$_POST['jours'];
-    $m=$_POST['mois'];
-    $a=$_POST['annee'];
+    
+        $_SESSION["j"]=$_POST['jours'];
+        $_SESSION["m"]=$_POST['mois'];
+        $_SESSION["a"]=$_POST['annee'];
 
-        $_SESSION["j"]=$j;
-        $_SESSION["m"]=$m;
-        $_SESSION["a"]=$a;
+        $error=[];
 
-    if (!empty($_SESSION["j"]) && ($_SESSION["j"])>=1 && is_numeric($_SESSION["j"]) && !empty($_SESSION["m"]) && ($_SESSION["m"])>=1 && ($_SESSION["m"])<=12 && is_numeric($_SESSION["m"]) && !empty($_SESSION["a"]) && ($_SESSION["a"])>=1 && is_numeric($_SESSION["a"]) )
-    {
-        $j=$_SESSION["j"];
-        $m=$_SESSION["m"];
-        $a=$_SESSION["a"];
+        if (!empty($_SESSION["j"]) && !empty($_SESSION["m"])  && !empty($_SESSION["a"]) ) {  
+             
+            if (dateValide($_SESSION["j"],$_SESSION["m"],$_SESSION["a"])) {
+                
+                $_SESSION["jv"]=$_SESSION["j"];
+                $_SESSION["mv"]=$_SESSION["m"];
+                $_SESSION["av"]=$_SESSION["a"];
+    
+                datePrecedente ($j,$m,$a);
+    
+                dateSuivante ($j,$m,$a);
 
-        datePrecedente ($j,$m,$a);
+                header ('location:index.php');
 
-        dateSuivante ($j,$m,$a);
-        
-        header ('location:index.php');
+            }else {
 
-    }else{
+                $_SESSION['error']='La date saisie est invalide';
 
-        if (empty($_SESSION["j"]) || empty($_SESSION["m"]) || empty($_SESSION["a"])) {
-           
+                header ('location:index.php');
+            }
+            
+            
+            
+
+        }else{
+                    
             $_SESSION['error']='Le remplissage de tous les champs est obligatoire';
-        }else {
+           
             
-            $_SESSION['error']='veuiller revoir votre saisie';
-            
-        }
-       
-        header ('location:index.php');
+            header ('location:index.php');
+        }   
+        
+        
     }
-}
+             
 ?>

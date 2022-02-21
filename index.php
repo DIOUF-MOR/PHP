@@ -24,6 +24,8 @@
         <li><a href="EXERCICE9/index.php">EXERCICE9</a></li>
         <li><a href="EXERCICE10/index.php">EXERCICE10</a></li>
         <li><a href="EXERCICE11/index.php">EXERCICE11</a></li>
+        <li><a href="EXERCICE12/index.php">EXERCICE12</a></li>
+        
     </ul>
 </nav>
 

@@ -1,6 +1,26 @@
 <?php
 //  session_start();
 
+    function dateValide($j,$m,$a){
+
+        if (is_numeric($a) && is_numeric($m) && is_numeric($j) && $a>0 && $j>=1 && [($j<=30 &&  ($m==4 || $m==2 || $m==6 || $m==8 || $m==9 || $m==11)) || $j<=31 && ($m==3 || $m==5 || $m==7 || $m==8 || $m==10 || $m==12 || $m==1)]) {
+            
+            $_SESSION['valide']='date valide';
+
+        }
+        
+        if (is_numeric($a) && is_numeric($m) && is_numeric($j) && $a>0 && $m==2 && $j>=1 && ($j<=28 || ((($a % 4==0 && $a % 100 <>0) || $a % 400==0) &&  $j<=29))) {
+            
+            $_SESSION['valide']='date valide';
+
+
+        }
+    }
+
+    
+
+
+
     function datePrecedente ($j,$m,$a){
         
 
@@ -56,10 +76,10 @@
         $_SESSION["mP"]=2;
         $_SESSION["aP"]=$a;
     }
-
-    
     echo '<h6>La date précedente est </h6>' .$_SESSION["jP"]." / ". $_SESSION["mP"]." / ". $_SESSION["aP"] .'<br>'; 
+    
 }
+
 
 
 

@@ -10,10 +10,20 @@
 </head>
 <body>
     <div class="css">
-    <?php
-    include "fonctions.php";
-    echo permutation( rand(1,10),rand(1,10));
-    ?>
+        <?php
+            include "fonctions.php";
+            $nmbre1=rand(1,10);
+            $nmbre2=rand(1,10);
+        ?>
+        <div class="sujet">
+            <?php echo"<b>voilà les deux nombres </b><br>".$nmbre1." et ".$nmbre2;?>
+        </div>
+        <div class="impliq"><b>======></b></div>
+        <div class="resultat">
+            <?php
+            echo "<b>leur Permutation est :<br>". permutation( $nmbre1,$nmbre2)."</b>";
+            ?>
+        </div>
     </div>
     <br>
     <div class="lesBoutons">

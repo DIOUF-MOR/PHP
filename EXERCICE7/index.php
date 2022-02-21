@@ -39,9 +39,9 @@
     <div class="ph3p">
     <?php
          
-         if (isset($_SESSION["jP"]) && isset($_SESSION["jS"])) {
+         if (isset($_SESSION["jv"]) && isset($_SESSION["mv"]) && isset($_SESSION["mv"])) {
 
-            echo "<h6 style='color:blue'>Voila la date que tu as saisi :".$_SESSION["j"].'/'.$_SESSION["m"].'/'.$_SESSION["a"]."</h6>";
+            echo "<h6 style='color:blue'>Voila la date que tu as saisi :".$_SESSION["jv"].'/'.$_SESSION["mv"].'/'.$_SESSION["av"]."</h6>";
             
             echo '<h6>La date précedente est : le ' .$_SESSION["jP"]." / ". $_SESSION["mP"]." / ". $_SESSION["aP"] .'</h6>'; 
 
